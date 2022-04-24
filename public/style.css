@@ -24,6 +24,7 @@ main {
 section#cards {
 	display: flex;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
 	margin-top: 3rem;
 }
 
@@ -32,6 +33,7 @@ section#cards div.card {
 	box-shadow: 0 0 1em #00000075;
 	border-radius: 25px;
 	padding: 1.5rem;
+	margin-top: 3rem;
 }
 
 section#cards div.card img {
@@ -51,6 +53,56 @@ section#cards div.card p.tipo {
 	font-style: italic;
 }
 
+section#cadastro {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 5rem;
+}
 
+section#cadastro h2 {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 2rem;
+}
 
+section#cadastro form {
+	width: 50%;
+}
 
+section#cadastro form input {
+	width: 100%;
+	padding: .3rem;
+	font-size: 1rem;
+	outline: none;
+	border-radius: 5px;
+	border: solid 1px rgb(67, 67, 67);
+	margin: 0 1rem 1rem 1rem;
+}
+
+section#cadastro form label {
+	margin: 1rem;
+	color: rgb(67, 67, 67);
+}
+
+section#cadastro form button {
+	padding: .8rem;
+	width: 18%;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	border-radius: 30px;
+	font-size: 1rem;
+	font-style: oblique;
+	background-color: #ffffff;
+	border: solid 1px rgb(67, 67, 67);
+	color: rgb(67, 67, 67);
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+
+section#cadastro form button:hover {
+	background-color: #bb0303;
+	color: rgb(255, 255, 255);
+	border: solid 1px #bb0303;
+}
