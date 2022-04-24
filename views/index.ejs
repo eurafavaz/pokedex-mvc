@@ -9,8 +9,21 @@
 </head>
 <body>
 
+    <nav>
+        <ul>
+            <li><img src="/img/pokebola.png" alt="pokebola"></li>
+            <li>
+                <a href="/">
+                    <h1>Pokédex</h1>
+                </a>
+            </li>
+            <li><a href="#cadastro">Cadastro</a></li>
+            <li><a href="#cards">Pokemons</a></li>
+        </ul>
+    </nav>
+
     <header>
-        <h1>Pokédex</h1>
+        <img src="/img/banner.jpg" alt="banner">
     </header>
 
     <main>
@@ -80,13 +93,21 @@
                 <h3><%= pokemon.nome %></h3>
                 <p class="tipo">Tipo: <%= pokemon.tipo %></p>
                 <p class="descricao"><%= pokemon.descricao %></p>
-                <a href="/detalhes/<%= pokemon.id %>">Editar</a>
+                <a id="editar" href="/detalhes/<%= pokemon.id %>">Editar</a>
+                <a id="apagar" href="/delete/<%= pokemon.id %>">Apagar</a>
             </div>
         <% }) %>
 
         </section>
 
     </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/eurafavaz" target="_blank"> Criado por Rafael Vaz via orientação do Thi Code nas aulas do GitBook </a>
+            - Todos os direitos reservados (Pokédex) &copy;
+        </p>
+    </footer>
 
 </body>
 

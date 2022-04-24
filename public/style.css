@@ -4,17 +4,44 @@
 	margin: 0;
 	padding: 0;
     font-family: Open Sans, Arial;
+	scroll-behavior: smooth;
 }
 
-header {
-	padding: 2rem;
-	background-color: red;
+nav {
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	background-color: rgb(129, 20, 20);
 }
 
-header h1 {
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+
+nav ul li {
+	padding: 0.6rem;
+}
+
+nav ul li a {
+	text-decoration: none;
 	color: #fff;
-	font-size: 2.5rem;
-	text-align: center;
+	font-size: 0.8rem;
+}
+
+nav img {
+	width: 3rem;
+}
+
+nav h1 {
+	color: #fff;
+	font-size: 1.3rem;
+}
+
+header img {
+	margin-top: 4rem;
+	width: 100%;
 }
 
 main {
@@ -58,9 +85,8 @@ section#cards div.card p.tipo {
 	font-style: italic;
 }
 
-section#cards div.card a {
+section#cards div.card a#editar {
 	padding: .8rem;
-	width: 18%;
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
@@ -76,10 +102,34 @@ section#cards div.card a {
 	margin-top: 1.5rem;
 }
 
-section#cards div.card a:hover {
+section#cards div.card a#apagar {
+	padding: .8rem;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	border-radius: 30px;
+	font-size: 1rem;
+	font-style: oblique;
+	font-weight: 700;
+	background-color: #ffffff;
+	border: solid 1px rgb(199, 23, 23);
+	color: rgb(199, 23, 23);
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+	text-decoration: none;
+	margin-top: 0.8rem;
+}
+
+section#cards div.card a#editar:hover {
 	background-color: #034dbb;
 	color: rgb(255, 255, 255);
 	border: solid 1px #034dbb;
+}
+
+section#cards div.card a#apagar:hover {
+	background-color: rgb(199, 23, 23);
+	color: rgb(255, 255, 255);
+	border: solid 1px rgb(199, 23, 23);
 }
 
 section#cadastro {
@@ -139,3 +189,24 @@ section#cadastro form button:hover {
 	color: rgb(255, 255, 255);
 	border: solid 1px #bb0303;
 }
+
+footer {
+	background-color: rgb(129, 20, 20);
+	padding: 4rem;
+	text-align: center;
+	color: #fff;
+	font-size: .8rem;
+	margin-top: 5rem;
+  }
+  
+  footer a{
+	text-decoration: none;
+	color: #fff;
+  }
+  
+  footer a:hover{
+	color: rgb(0, 0, 0);
+  }
+
+
+
