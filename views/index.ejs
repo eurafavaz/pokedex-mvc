@@ -51,6 +51,21 @@
                     <label for="imagem">Link da imagem:</label>
                     <input type="url" id="imagem" name="imagem">
 
+                    <label for="numero">Número:</label>
+                    <input type="text" id="numero" name="numero">
+
+                    <label for="altura">Altura:</label>
+                    <input type="text" id="altura" name="altura">
+
+                    <label for="peso">Peso:</label>
+                    <input type="text" id="peso" name="peso">
+
+                    <label for="categoria">Categoria:</label>
+                    <input type="text" id="categoria" name="categoria">
+
+                    <label for="habilidade">Habilidade:</label>
+                    <input type="text" id="habilidade" name="habilidade">
+
                     <button id="btnCadastrar" type="submit">Cadastrar</button>
                     
                 </form>
@@ -71,6 +86,21 @@
         
                     <label for="imagem">Link da imagem:</label>
                     <input type="url" id="imagem" name="imagem" value="<%= pokemon.imagem %>">
+
+                    <label for="numero">Número:</label>
+                    <input type="text" id="numero" name="numero" value="<%= pokemon.numero %>">
+
+                    <label for="altura">Altura:</label>
+                    <input type="text" id="altura" name="altura" value="<%= pokemon.altura %>">
+
+                    <label for="peso">Peso:</label>
+                    <input type="text" id="peso" name="peso" value="<%= pokemon.peso %>">
+
+                    <label for="categoria">Categoria:</label>
+                    <input type="text" id="categoria" name="categoria" value="<%= pokemon.categoria %>">
+
+                    <label for="habilidade">Habilidade:</label>
+                    <input type="text" id="habilidade" name="habilidade" value="<%= pokemon.habilidade %>">
         
                     <button id="btnAtualizar" type="submit">Atualizar</button>
                         
@@ -93,6 +123,11 @@
                 <h3><%= pokemon.nome %></h3>
                 <p class="tipo">Tipo: <%= pokemon.tipo %></p>
                 <p class="descricao"><%= pokemon.descricao %></p>
+                <p class="numero">Número: <%= pokemon.numero %></p>
+                <p class="altura">Altura: <%= pokemon.altura %></p>
+                <p class="peso">Peso: <%= pokemon.peso %></p>
+                <p class="categoria">Categoria: <%= pokemon.categoria %></p>
+                <p class="habilidade">Habilidade: <%= pokemon.habilidade %></p>
                 <a id="editar" href="/detalhes/<%= pokemon.id %>">Editar</a>
                 <a id="apagar" href="/delete/<%= pokemon.id %>">Apagar</a>
             </div>
