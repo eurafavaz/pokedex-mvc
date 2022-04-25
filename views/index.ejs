@@ -40,31 +40,31 @@
                 <form action="/create" method="POST">
 
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome">
+                    <input type="text" id="nome" name="nome" required>
 
                     <label for="tipo">Tipo:</label>
-                    <input type="text" id="tipo" name="tipo">
+                    <input type="text" id="tipo" name="tipo" required>
 
                     <label for="descricao">Descrição:</label>
-                    <input type="text" id="descricao" name="descricao">
+                    <input type="text" id="descricao" name="descricao" required>
 
                     <label for="imagem">Link da imagem:</label>
-                    <input type="url" id="imagem" name="imagem">
+                    <input type="url" id="imagem" name="imagem" required>
 
                     <label for="numero">Número:</label>
-                    <input type="text" id="numero" name="numero">
+                    <input type="text" id="numero" name="numero" required>
 
                     <label for="altura">Altura:</label>
-                    <input type="text" id="altura" name="altura">
+                    <input type="text" id="altura" name="altura" required>
 
                     <label for="peso">Peso:</label>
-                    <input type="text" id="peso" name="peso">
+                    <input type="text" id="peso" name="peso" required>
 
                     <label for="categoria">Categoria:</label>
-                    <input type="text" id="categoria" name="categoria">
+                    <input type="text" id="categoria" name="categoria" required>
 
                     <label for="habilidade">Habilidade:</label>
-                    <input type="text" id="habilidade" name="habilidade">
+                    <input type="text" id="habilidade" name="habilidade" required>
 
                     <button id="btnCadastrar" type="submit">Cadastrar</button>
                     
@@ -76,31 +76,31 @@
                 <form action="/update/<%= pokemon.id %>" method="POST">
 
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" value="<%= pokemon.nome %>">
+                    <input type="text" id="nome" name="nome" value="<%= pokemon.nome %>" required>
         
                     <label for="tipo">Tipo:</label>
-                    <input type="text" id="tipo" name="tipo" value="<%= pokemon.tipo %>">
+                    <input type="text" id="tipo" name="tipo" value="<%= pokemon.tipo %>" required>
         
                     <label for="descricao">Descrição:</label>
-                    <input type="text" id="descricao" name="descricao" value="<%= pokemon.descricao %>">
+                    <input type="text" id="descricao" name="descricao" value="<%= pokemon.descricao %>" required>
         
                     <label for="imagem">Link da imagem:</label>
-                    <input type="url" id="imagem" name="imagem" value="<%= pokemon.imagem %>">
+                    <input type="url" id="imagem" name="imagem" value="<%= pokemon.imagem %>" required>
 
                     <label for="numero">Número:</label>
-                    <input type="text" id="numero" name="numero" value="<%= pokemon.numero %>">
+                    <input type="text" id="numero" name="numero" value="<%= pokemon.numero %>" required>
 
                     <label for="altura">Altura:</label>
-                    <input type="text" id="altura" name="altura" value="<%= pokemon.altura %>">
+                    <input type="text" id="altura" name="altura" value="<%= pokemon.altura %>" required>
 
                     <label for="peso">Peso:</label>
-                    <input type="text" id="peso" name="peso" value="<%= pokemon.peso %>">
+                    <input type="text" id="peso" name="peso" value="<%= pokemon.peso %>" required>
 
                     <label for="categoria">Categoria:</label>
-                    <input type="text" id="categoria" name="categoria" value="<%= pokemon.categoria %>">
+                    <input type="text" id="categoria" name="categoria" value="<%= pokemon.categoria %>" required>
 
                     <label for="habilidade">Habilidade:</label>
-                    <input type="text" id="habilidade" name="habilidade" value="<%= pokemon.habilidade %>">
+                    <input type="text" id="habilidade" name="habilidade" value="<%= pokemon.habilidade %>" required>
         
                     <button id="btnAtualizar" type="submit">Atualizar</button>
                         
